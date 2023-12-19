@@ -13,7 +13,10 @@ const db = mySql.createConnection({
     host: "localhost",
     user: "root",
     database: "todo-data",
-    password: "8790518724@Gopijami"
+    password: "8790518724@Gopijami",
+    waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0
 })
 
 app.use(express.json({ limit: '50mb' }));
