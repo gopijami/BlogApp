@@ -1,0 +1,117 @@
+.nav-container{  
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+.dvv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    float: inline-start;
+    padding-right: 30px;
+    background-image: linear-gradient(to right, #e8d65f,#6cdcb1,#ffffffd4);
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 80px;
+}
+
+.btn-style{
+    background-color: #04cdc0;
+    min-width: 100px;
+    height: 35px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    border: 0;
+    margin-right: 30px;
+}
+
+.home {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff; /* Set the text color */
+    z-index: 1; /* Ensure the text is rendered on top of the pseudo-element */
+  }
+  
+  .home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    background-color: #60b246;
+    transition: left 0.5s;
+    z-index: -1; /* Move the pseudo-element below the text layer */
+  }
+  
+  .home:hover::before {
+    left: 0;
+  }
+
+
+.create {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff; /* Set the text color */
+    z-index: 1; /* Ensure the text is rendered on top of the pseudo-element */
+  }
+  
+  .create::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    background-color: #60b246;
+    transition: left 0.5s;
+    z-index: -1; /* Move the pseudo-element below the text layer */
+  }
+  
+  .create:hover::before {
+    left: 0;
+  }
+
+  .mdm{
+    display: none;
+  }
+
+  .dbs1{
+    display: flex;
+  }
+
+  @media (max-width:572px){
+    .dbs1{
+        display: none !important;
+    }
+
+    .mdm{
+        display: flex;
+    }
+    .home{
+        margin-bottom: 10px;
+    }
+
+    .mdm2 {
+        display: flex;
+        width: 100vw;
+        height: 60vh;
+        background-color: #d4d89f;
+        z-index: 3;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        left: 0px;
+      }
+
+  }
+

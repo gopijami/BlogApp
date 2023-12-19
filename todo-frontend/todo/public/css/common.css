@@ -1,0 +1,55 @@
+/* CREATE BLOG STYLES */
+
+/* YourComponent.module.css */
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .textarea {
+    height: 100px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
