@@ -12,8 +12,9 @@ app.use(cors());
 const db = mySql.createConnection({
     host: "localhost",
     user: "root",
-    database: "todo-data",
     password: "8790518724@Gopijami",
+    port:8080,
+    database: "todo-data",
     waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
